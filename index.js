@@ -6,7 +6,6 @@ const { CanvasRenderService } = require('chartjs-node-canvas');
 const { Image } = require('canvas');
 const fs = require('fs');
 const path = require('path');
-const buffered = fs.readFileSync(path.join(__dirname, 'logo.png'));
 
 // require('chartjs-plugin-piechart-outlabels');
 // require('chartjs-plugin-doughnutlabel');
@@ -248,7 +247,6 @@ function render(width, height, backgroundColor, devicePixelRatio, chart, brandin
 				if (branding) {
 					const img = new Image();
 					img.onload = () => ctx.drawImage(img, width - 75, 12, 15, 15);
-					img.src = buffered;
 					ctx.font = 'bold 8px sans-serif';
 					ctx.fillStyle = '#666';
 					ctx.fillText('Miu Bot', width - 58, 20);
