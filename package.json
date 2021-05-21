@@ -1,0 +1,33 @@
+{
+	"name": "@miudiscord/chart-generator",
+	"version": "1.0.1",
+	"description": "Chart generator for miu bot. Fork from clashperk repo",
+	"author": "MrVelociti",
+	"license": "ISC",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/miudiscord/chart-generator.git"
+	},
+	"bugs": {
+		"url": "https://github.com/miudiscord/chart-generator/issues"
+	},
+	"homepage": "https://github.com/miudiscord/chart-generator#readme",
+	"dependencies": {
+		"canvas": "2.6.1",
+		"chart.js": "2.9.4",
+		"chartjs-chart-box-and-violin-plot": "2.3.0",
+		"chartjs-chart-radial-gauge": "1.0.3",
+		"chartjs-node-canvas": "3.0.6",
+		"chartjs-plugin-annotation": "0.5.7",
+		"chartjs-plugin-datalabels": "0.7.0",
+		"chartjs-plugin-piechart-outlabels": "0.1.4"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	}
+}
